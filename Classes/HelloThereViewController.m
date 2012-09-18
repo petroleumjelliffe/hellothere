@@ -2,6 +2,8 @@
 
 @implementation HelloThereViewController
 
+@synthesize locationController, locationLabel, headingLabel;
+
 - (void)viewDidLoad { 	
 	locationController = [[MyCLController alloc] init];
 	locationController.delegate = self;
@@ -13,10 +15,6 @@
     [super didReceiveMemoryWarning]; 
 }
 
-- (void)dealloc {
-	[locationController release];
-    [super dealloc];
-}
 
 - (void)locationUpdate:(CLLocation *)location {
 	locationLabel.text = [location  description] ;
