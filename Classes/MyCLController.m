@@ -8,7 +8,7 @@
 - (id) init {
 	self = [super init];
 	if (self != nil) {
-		self.locationManager = [[CLLocationManager alloc] init];
+		self.locationManager = [[[CLLocationManager alloc] init] autorelease];
 		self.locationManager.delegate = self; // send loc updates to myself
 	}
 	return self;
@@ -17,13 +17,10 @@
 - (void)locationManager:(CLLocationManager *)manager
 	didUpdateToLocation:(CLLocation *)newLocation
 		   fromLocation:(CLLocation *)oldLocation
+       didUpdateHeading:(CLHeading *)newheading
 {
-	[self.delegate locationUpdate:newLocation];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
-{
-    [self.delegate headingUpdate:newHeading];
+    [self.delegate headingUpdate:newheading];
+	//[self.delegate locationUpdate:newLocation];
 }
 
 
@@ -31,6 +28,11 @@
 	   didFailWithError:(NSError *)error
 {
 	[self.delegate locationError:error];
+}
+
+- (void)dealloc {
+	[self.locationManager release];
+    [super dealloc];
 }
 
 @end

@@ -10,10 +10,13 @@
 
 @class HelloThereViewController;
 
-@interface HelloThereAppDelegate : NSObject <UIApplicationDelegate> 
+@interface HelloThereAppDelegate : NSObject <UIApplicationDelegate> {
+    UIWindow *window;
+    HelloThereViewController *viewController;
+}
 
-@property (nonatomic, strong) IBOutlet UIWindow *window;
-@property (nonatomic, strong) IBOutlet HelloThereViewController *viewController;
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet HelloThereViewController *viewController;
 
 @end
 

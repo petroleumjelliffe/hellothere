@@ -10,7 +10,6 @@
 		1D3623260D0F684500981E51 /* HelloThereAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* HelloThereAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1D6402FF1608CB1A00431EB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6402FE1608CB1A00431EB3 /* Default-568h@2x.png */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		26640A870F39FB72003EFB8F /* MyCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26640A860F39FB72003EFB8F /* MyCLController.m */; };
 		26640A980F39FFE2003EFB8F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26640A970F39FFE2003EFB8F /* CoreLocation.framework */; };
@@ -26,7 +25,6 @@
 		1D3623240D0F684500981E51 /* HelloThereAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloThereAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* HelloThereAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloThereAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HelloThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D6402FE1608CB1A00431EB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26640A850F39FB72003EFB8F /* MyCLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCLController.h; sourceTree = "<group>"; };
 		26640A860F39FB72003EFB8F /* MyCLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCLController.m; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				1D6402FE1608CB1A00431EB3 /* Default-568h@2x.png */,
 				69B062EC160823DC00CB1C99 /* View.xib */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -174,7 +171,6 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* HelloThereViewController.xib in Resources */,
 				69B062ED160823DC00CB1C99 /* View.xib in Resources */,
-				1D6402FF1608CB1A00431EB3 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +195,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -214,7 +209,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HelloThere_Prefix.pch;
