@@ -17,8 +17,10 @@
 - (void)locationManager:(CLLocationManager *)manager
 	didUpdateToLocation:(CLLocation *)newLocation
 		   fromLocation:(CLLocation *)oldLocation
+       didUpdateHeading:(CLHeading *)newheading
 {
-	[self.delegate locationUpdate:newLocation];
+    [self.delegate headingUpdate:newheading];
+	//[self.delegate locationUpdate:newLocation];
 }
 
 

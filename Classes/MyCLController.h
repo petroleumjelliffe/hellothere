@@ -1,6 +1,7 @@
 @protocol MyCLControllerDelegate <NSObject>
 @required
-- (void)locationUpdate:(CLLocation *)location; 
+- (void)locationUpdate:(CLLocation *)location;
+- (void)headingUpdate:(CLHeading *)heading;
 - (void)locationError:(NSError *)error;
 @end
 
@@ -14,7 +15,8 @@
 
 - (void)locationManager:(CLLocationManager *)manager
 	didUpdateToLocation:(CLLocation *)newLocation
-		   fromLocation:(CLLocation *)oldLocation;
+		   fromLocation:(CLLocation *)oldLocation
+       didUpdateHeading:(CLHeading *)newheading;
 
 - (void)locationManager:(CLLocationManager *)manager
 	   didFailWithError:(NSError *)error;
